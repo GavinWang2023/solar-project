@@ -1,0 +1,30 @@
+模块名: 光伏发电参数
+参数:
+  省份:
+    label: 省份
+    type: select_from_csv
+    default: 江苏
+  城市:
+    label: 城市
+    type: select_from_csv
+    default: 南京
+  太阳能板面积（㎡）:
+    label: 太阳能板面积（㎡）
+    type: number
+    min: 1.0
+    max: 500.0
+    default: 50.0
+  太阳能板转换效率（η）:
+    label: 太阳能板转换效率（η）
+    type: slider
+    min: 0.1
+    max: 0.25
+    step: 0.01
+    default: 0.18
+  系统效率因子（PR）:
+    label: 系统效率因子（PR）
+    type: slider
+    min: 0.6
+    max: 0.95
+    step: 0.01
+    default: 0.8

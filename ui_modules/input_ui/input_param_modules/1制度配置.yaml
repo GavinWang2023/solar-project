@@ -1,0 +1,37 @@
+模块名: 制度配置
+参数:
+  投资主体:
+    label: 投资主体
+    type: select
+    options: [农户, 企业, 村集体]
+    default: 农户
+  产权归属:
+    label: 产权归属
+    type: select
+    options: [农户, 企业, 共建]
+    default: 农户
+  电量消纳方式:
+    label: 电量消纳方式
+    type: select
+    options: [自发自用, 余电上网, 全额上网]
+    default: 自发自用
+  融资方式:
+    label: 融资方式
+    type: select
+    options: [自筹, 贷款, 垫资]
+    default: 自筹
+  合同结构:
+    label: 合同结构
+    type: select
+    options: [屋顶租赁, 收益分成, 混合型]
+    default: 屋顶租赁
+  运维管理:
+    label: 运维管理
+    type: select
+    options: [农户自管, 企业托管, 第三方]
+    default: 农户自管
+  组织形式:
+    label: 组织形式
+    type: select
+    options: [单户, 整村, 平台化]
+    default: 单户
