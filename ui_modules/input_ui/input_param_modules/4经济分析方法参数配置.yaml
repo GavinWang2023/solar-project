@@ -1,42 +1,83 @@
-模块名: 经济分析方法参数配置
+模块名: 成本与生命周期模块
 参数:
 
-  年通胀率:
-    label: 年通胀率（%）
+  # 用电与收益模块
+  发电售卖比例:
+    label: 发电售卖比例（%）
     type: slider
-    min: 0.0
-    max: 5.0
-    step: 0.1
-    default: 2.0
+    min: 0
+    max: 0
+    step: 1
+    default: 100
 
-  折现率:
-    label: 折现率（%）
-    type: slider
-    min: 0.0
-    max: 15.0
-    step: 0.1
-    default: 8.0
+  用电电价:
+    label: 用电电价（元/kWh）
+    type: number
+    min: 0.20
+    max: 1.50
+    step: 0.01
+    default: 0.55
+
+  售电电价:
+    label: 售电电价（元/kWh）
+    type: number
+    min: 0.10
+    max: 1.00
+    step: 0.01
+    default: 0.40
+
+  # 成本与生命周期模块
+  年运维成本:
+    label: 年运维成本（元/㎡·年）
+    type: number
+    min: 0
+    max: 20
+    default: 5
+
+  年补贴金额:
+    label: 年补贴金额（元/度）
+    type: number
+    min: 0.00
+    max: 0.50
+    step: 0.01
+    default: 0.00
 
   产品使用寿命:
     label: 产品使用寿命（年）
     type: slider
     min: 5
-    max: 30
+    max: 50
     step: 1
-    default: 20
+    default: 30
 
-  所得税税率:
-    label: 所得税税率（%）
+  综合税率:
+    label: 综合税率（%）
     type: slider
     min: 0.0
     max: 30.0
     step: 0.1
-    default: 5.0
+    default: 10.0
 
-  年折旧金额:
-    label: 年折旧金额（元）
-    type: number
-    min: 0
-    max: 20000
-    step: 100
-    default: 1000
+  年折旧率:
+    label: 年折旧率（%）
+    type: slider
+    min: 0.00
+    max: 10.00
+    step: 0.01
+    default: 0.00
+
+  折现率:
+    label: 折现率（%）
+    type: slider
+    min: 0.00
+    max: 15.00
+    step: 0.01
+    default: 8.00
+
+  通货膨胀率:
+    label: 通货膨胀率（%）
+    type: slider
+    min: 0.00
+    max: 10.00
+    step: 0.01
+    default: 2.50

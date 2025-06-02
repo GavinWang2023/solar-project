@@ -26,7 +26,7 @@ def load_user_inputs(path):
         return {}
 
 def render():
-    st.markdown("## 📋 项目基本情况")
+    st.markdown("")
 
     user_inputs = load_user_inputs(USER_INPUT_PATH)
     if not user_inputs:
@@ -40,12 +40,3 @@ def render():
         st.table([{k: str(v) for k, v in config.items()}])  # 强制转为字符串
     else:
         st.info("暂无制度配置信息。")
-
-    # 光伏发电参数展示
-    solar = user_inputs.get("2光伏发电参数", {})
-    st.markdown("### ☀️ 光伏发电参数")
-    if solar:
-        st.table([{k: str(v) for k, v in solar.items()}])  # 强制转为字符串
-    else:
-        st.info("暂无光伏发电参数信息。")
-

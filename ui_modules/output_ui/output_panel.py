@@ -60,5 +60,5 @@ def render_output_panel():
         st.subheader(f"📂 {category}")
         modules_sorted = sorted(modules, key=lambda x: x["order"])
         for mod in modules_sorted:
-            with st.expander(f"📌 {mod['title']}", expanded=True):
-                mod["render_fn"]()
+            st.markdown(f"### 📌 {mod['title']}")
+            mod["render_fn"]()
