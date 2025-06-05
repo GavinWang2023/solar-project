@@ -17,10 +17,10 @@
   太阳能板转换效率（η）:
     label: 太阳能板转换效率（η）
     type: slider
-    min: 0.100
-    max: 0.255
-    step: 0.001
-    default: 0.181
+    min: 0.10
+    max: 0.25
+    step: 0.01
+    default: 0.18
   系统效率因子（PR）:
     label: 系统效率因子（PR）
     type: slider
