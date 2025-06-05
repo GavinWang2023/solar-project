@@ -44,7 +44,7 @@
   其他初期费用:
     label: 其他初期费用（元）
     type: number
-    min: 0
+    min: -20000
     max: 20000
     step: 100
     default: 2000
