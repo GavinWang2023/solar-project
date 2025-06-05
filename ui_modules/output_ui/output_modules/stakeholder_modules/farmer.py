@@ -156,7 +156,7 @@ def generate_farmer_cashflow_plot(data: dict) -> pd.DataFrame:
             rent_cost = rent.get(year, 0.0)
             loan_cost = loan.get(year, 0.0)
 
-        net = income - expense - rent_cost - loan_cost
+        net = income - expense + rent_cost - loan_cost
 
         records.append({
             "使用年份": year,
